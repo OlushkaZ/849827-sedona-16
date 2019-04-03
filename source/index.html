@@ -23,13 +23,11 @@
           <a href="#">HTML Academy</a>
         </li>
       </ul>
-    </nav>
-    <div class="page-header__wrapper">
-      <a class="page-header__logo page-header__wrapper-logo">
-        <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип городка «Седона»">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип городка «Седона»">
       </a>
-      <button class="main-nav__toggle page-header__wrapper-toggle" type="button">Открыть меню</button>
-    </div>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    </nav>
     <img class="page-header__image" src="http://placehold.it/320x389" width="320" height="389" alt="Окрестности городка «Седона»">
   </header>
   <main class="page-main">
@@ -42,10 +40,14 @@
       </header>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--big">
-          <h3 class="advantages__title">Настоящий городок</h3>
-          <span class="advantages__number">— №1 —</span>
-          <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="advantages__wrapper-text">
+            <h3 class="advantages__title">Настоящий городок</h3>
+            <span class="advantages__number">— №1 —</span>
+            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           <img class="advantages__image" src="http://placehold.it/320x260" width="320" height="260" alt="Вид городка «Седона»">
+        </li>
+        <li>
           <ul class="advantages__sublist">
             <li class="advantages__subitem advantages__subitem--hotel">
               <h3 class="advantages__subtitle">Жилье</h3>
@@ -62,9 +64,11 @@
           </ul>
         </li>
         <li class="advantages__item advantages__item--big">
-          <h3 class="advantages__title">Там есть мост дьявола</h3>
-          <span class="advantages__number">— №2 —</span>
-          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="advantages__wrapper-text">
+            <h3 class="advantages__title">Там есть мост дьявола</h3>
+            <span class="advantages__number">— №2 —</span>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
           <img class="advantages__image" src="http://placehold.it/320x260" width="320" height="260" alt="Вид городка «Седона»">
         </li>
         <li class="advantages__item advantages__item--small">
