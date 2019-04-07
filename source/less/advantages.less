@@ -10,9 +10,7 @@
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .clear-list;
 }
 
 .advantages__header {
@@ -21,9 +19,7 @@
 }
 
 .advantages__slogan {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 800;
+  .header;
   color: @font-color3;
 }
 
@@ -41,10 +37,7 @@
 }
 
 .advantages__title {
-  //как slogan subtitle
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 800;
+  .header;
 }
 
 .advantages__item {
@@ -90,9 +83,12 @@
   background-size: 40px 35px;
 }
 
+.advantages__sublist {
+  .clear-list;
+  padding-left: 20px;
+}
+
 .advantages__subtitle {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 800;
+  .header;
   color: @font-color3;
 }

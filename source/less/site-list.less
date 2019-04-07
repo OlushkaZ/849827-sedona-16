@@ -1,13 +1,22 @@
-.site-list{ //////////////////////////////ul
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.site-list {
+  .clear-list;
   text-align: center;
 }
-.site-list__item{
+
+.site-list__item {
   background-color: @background-color2;
+
+  &:focus,
+  &:hover {
+    background-color: @background-color2-hov;
+  }
+
+  &:active {
+    background-color: @background-color2-act;
+  }
 }
-.site-list__link{
+
+.site-list__link {
   color: @font-color2;
   text-decoration: none;
 }
