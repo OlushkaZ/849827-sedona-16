@@ -41,7 +41,6 @@
 }
 
 .advantages__item {
-  padding: 30px 20px;
   text-align: center;
   background-color: @background-color3;
 }
@@ -50,14 +49,6 @@
   background-color: @background-color2;
   color: white;
 }
-
-// .advantages__item:first-child {
-//   padding-top: 80px;
-//   background-image: url("../img/bg-triangle.svg");
-//   background-repeat: no-repeat;
-//   background-size: 100%;
-//   background-position: 0 -1px;
-// }
 
 .advantages__subitem {
   padding-right: 40px;
@@ -92,3 +83,19 @@
   .header;
   color: @font-color3;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__item--big {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+// @media (min-width: @desktop-width) {
+//   body {
+//     // background-color: blue;
+//     background: @bg-darkgrey url("../img/sedona-index-desktop.jpg") no-repeat 50% 0;
+//     background-size: 1280px auto;
+//   }
+// }
