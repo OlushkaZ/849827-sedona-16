@@ -1,9 +1,26 @@
-
 .page-header {
-  font-family: "PTSans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 40px;
   font-weight: 800;
-  text-transform: uppercase;
+  text-align: center;
   outline: 1px solid green;
+}
+
+.page-header__image {
+  vertical-align: bottom;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }

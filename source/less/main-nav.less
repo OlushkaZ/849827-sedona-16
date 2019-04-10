@@ -1,10 +1,33 @@
 .main-nav {
   padding-bottom: 56px;
+  position: relative;
   outline: 2px solid blue;
 }
+
 .main-nav__logo {
   position: absolute;
+  bottom: -43px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 .main-nav__toggle {
   position: absolute;
+  right: 6%;
+  bottom: 5%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    padding-bottom: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    top: 0;
+  }
 }
