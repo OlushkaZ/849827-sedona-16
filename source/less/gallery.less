@@ -17,6 +17,8 @@
 
 .gallery__list {
   .clear-list;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery__item {
@@ -39,4 +41,16 @@
   .font6(800, @font-color3);
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__item--first {
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__item--first {
+    width: @desktop-width;
+  }
 }
