@@ -1,5 +1,25 @@
 .page-footer {
+  box-sizing: border-box;
   padding: 30px 30px 23px 30px;
   text-align: center;
   outline: 1px solid red;
+}
+
+.page-footer__title {
+  .font5(@font-color3);
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+  }
 }
