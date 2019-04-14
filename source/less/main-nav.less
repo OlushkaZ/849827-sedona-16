@@ -1,7 +1,10 @@
 .main-nav {
+  min-height: 51px;
   padding-bottom: 56px;
   position: relative;
   outline: 2px solid blue;
+  background-color: @background-color2;
+  background-clip: content-box;
 }
 
 .main-nav__logo {
@@ -11,11 +14,45 @@
   transform: translateX(-50%);
 }
 
+.main-nav__logo-image {
+  width: 102px;
+  height: auto;
+}
+
 .main-nav__toggle {
   position: absolute;
-  right: 6%;
-  bottom: 5%;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: @background-color2;
+  cursor: pointer;
+  border: none;
+
+  &:focus,
+  &:hover {
+    background-color: @background-color2-hov;
+  }
+
+  &:active {
+    background-color: @background-color2-act;
+  }
 }
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: @background-color1;
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle::before {}
+
 
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -29,5 +66,12 @@
   .main-nav__logo {
     position: absolute;
     top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo-image {
+    width: 188px;
+    height: auto;
   }
 }

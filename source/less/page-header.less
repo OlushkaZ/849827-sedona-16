@@ -1,4 +1,6 @@
 .page-header {
+  width: 320px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 40px;
   font-weight: 800;
@@ -7,20 +9,32 @@
 }
 
 .page-header__image {
+  width: 320px;
+  height: auto;
   vertical-align: bottom;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    width: 768px;
-    margin: 0 auto;
+    width: 100%;
     font-size: 14px;
     line-height: 26px;
+  }
+
+  .page-header__image {
+    width: 768px;
+    height: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header__image {
+    width: 1200px;
+    height: auto;
   }
 }
