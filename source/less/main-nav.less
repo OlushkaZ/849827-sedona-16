@@ -1,15 +1,11 @@
 .main-nav {
-  min-height: 51px;
   padding-bottom: 56px;
   position: relative;
-  outline: 2px solid blue;
-  background-color: @background-color2;
-  background-clip: content-box;
 }
 
 .main-nav__logo {
   position: absolute;
-  bottom: -43px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -19,40 +15,51 @@
   height: auto;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 2;
-  width: 50px;
-  height: 50px;
-  background-color: @background-color2;
-  cursor: pointer;
-  border: none;
-
-  &:focus,
-  &:hover {
-    background-color: @background-color2-hov;
+@media (max-width: 767px) {
+  .main-nav__toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
   }
 
-  &:active {
-    background-color: @background-color2-act;
+  .main-nav--closed .main-nav__toggle {
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    z-index: 4;
+    background-image: url("../img/icon-cross.svg");
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
   }
 }
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
-  background-color: @background-color1;
-  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
-}
-
-.main-nav--opened .main-nav__toggle::before {}
-
 
 @media (min-width: @tablet-width) {
   .main-nav {
