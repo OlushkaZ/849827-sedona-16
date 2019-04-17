@@ -29,23 +29,54 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
-    background-color: @background-color1;
+    display: flex;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    width: 20%;
+  }
+  .site-list__item:nth-child(2),
+  .site-list__item:nth-child(6) {
+    margin-right: 10%;
+  }
+  .site-list__item:nth-child(3),
+  .site-list__item:nth-child(7) {
+    margin-left: 10%;
   }
 
   .site-list__link {
+    margin: auto;
+    padding: 15px 10px;
     color: @font-color3;
+    background-color: @background-color1;
+    box-shadow: none;
+  }
+
+  .site-list__link[href] {
+    &:focus,
+    &:hover {
+      color: @background-color2;
+      background-color: @background-color1;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: @background-color1;
+    }
+}
+.site-list__link:not([href]) {
+  color: #766357;
+
+  &:focus,
+  &:hover {
+    color: #604e43;
+  }
+
+  &:active {
+    color: rgba(118, 99, 87, 0.3);
   }
 }
-
-
-@media (min-width: @desktop-width) {
-  // body {
-  //   // background-color: blue;
-  //   background: @bg-darkgrey url("../img/sedona-index-desktop.jpg") no-repeat 50% 0;
-  //   background-size: 1280px auto;
-  // }
 }
