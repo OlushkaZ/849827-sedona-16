@@ -104,6 +104,18 @@
   .font2(@font-color3);
 }
 
+.advantages__image {
+  width: 320px;
+  height: auto;
+}
+
+@media (max-width: @tablet-width) {
+  .advantages__header {
+    background-image: url("../img/bg-triangle.svg"),
+      linear-gradient(to top, @background-color2 30px, transparent 30px);
+    background-position-y: bottom;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .advantages__header {
@@ -137,10 +149,6 @@
     border-top: none;
   }
 
-  .advantages__title--small {
-    white-space: pre-line;
-  }
-
   .advantages__slogan {
     .font5(@font-color3);
   }
@@ -153,6 +161,7 @@
 
   .advantages__title--small {
     .font5(@font-color3);
+    white-space: pre-line;
   }
 
   .advantages__description--big {
@@ -160,8 +169,13 @@
     margin: 0 auto;
   }
 
-  .advantages__image {
+  .advantages__picture {
     width: 67%;
+  }
+
+  .advantages__image {
+    display: block;
+    width: 100%;
   }
 
   .advantages__sublist {
