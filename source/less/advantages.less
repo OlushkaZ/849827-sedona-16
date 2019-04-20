@@ -7,7 +7,7 @@
 }
 
 .advantages__header {
-  padding: 43px 25px 29px 25px;
+  padding: 40px 26px 29px 26px;
   text-align: center;
 }
 
@@ -17,6 +17,7 @@
 
 .advantages__intro {
   .font3(@font-color1);
+  margin: 28px 0 14px 0;
 }
 
 .advantages__item--big {
@@ -34,12 +35,12 @@
 }
 
 .advantages__wrapper-text--big {
-  padding: 33px 17px 32px;
+  padding: 40px 17px 41px;
   background-color: @background-color2;
 }
 
 .advantages__wrapper-text--small {
-  padding: 33px 11px 32px;
+  padding: 26px 11px 29px;
   border-top: 1px solid grey;
 }
 
@@ -48,11 +49,14 @@
 }
 
 .advantages__title--big {
+  margin: 0;
+  margin-bottom: 8px;
   .font2(@font-color2);
 }
 
 .advantages__title--small {
   margin: 0;
+  margin-bottom: 9px;
   .font2(@font-color3);
 }
 
@@ -63,6 +67,17 @@
 .advantages__number--big,
 .advantages__description--big {
   color: @font-color2;
+  margin: 0;
+}
+
+.advantages__number--big {
+  margin-bottom: 17px;
+  display: block;
+}
+
+.advantages__number--small {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .advantages__item {
@@ -73,47 +88,61 @@
 
 .advantages__subitem {
   padding-right: 40px;
-  padding-left: 50px;
-  margin-top: 26px;
+  padding-left: 52px;
+  margin-top: 20px;
 }
 
 .advantages__subitem--hotel {
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: 36px 37px;
+  background-position: 4px 0;
 }
 
 .advantages__subitem--souvenir {
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 32px 38px;
+  background-position: 7px 0;
 }
 
 .advantages__subitem--food {
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: 40px 35px;
+  background-position: 0 4px;
 }
 
 .advantages__sublist {
   .clear-list;
-  padding-left: 20px;
+  padding-left: 18px;
+  padding-top: 5px;
+  margin-bottom: 37px;
 }
 
 .advantages__subtitle {
   .font2(@font-color3);
+  margin: 0;
+  padding-top: 10px;
+}
+
+.advantages__subintro {
+  margin: 0;
+  margin-top: 14px;
 }
 
 .advantages__image {
+  display: block;
   width: 320px;
   height: auto;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: @mobile-width-only) {
   .advantages__header {
     background-image: url("../img/bg-triangle.svg"),
       linear-gradient(to top, @background-color2 30px, transparent 30px);
-    background-position-y: bottom;
+    background-position-y: bottom, bottom;
+    background-repeat: no-repeat;
   }
 }
 
@@ -155,7 +184,7 @@
 
   .advantages__title--big {
     width: 151px;
-    margin: 0 auto;
+    // margin: 0 auto;
     .font5(@font-color2);
   }
 

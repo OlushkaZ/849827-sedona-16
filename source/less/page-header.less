@@ -5,13 +5,16 @@
   line-height: 40px;
   font-weight: 800;
   text-align: center;
-  outline: 1px solid green;
+  overflow: hidden;
 }
 
 .page-header__image {
-  width: 320px;
+  min-width: fit-content;
+  width: 768px;
   height: auto;
   vertical-align: bottom;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: @tablet-width) {
