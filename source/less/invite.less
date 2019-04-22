@@ -1,0 +1,32 @@
+.invite {
+  text-align: center;
+  margin: 0;
+  padding: 33px 20px 49px 20px;
+}
+
+.invite__slogan {
+  display: block;
+  margin-bottom: 30px;
+  .font5(@font-color3);
+}
+
+.invite__intro {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  .font6(400, @font-color1);
+}
+
+@media (min-width: @tablet-width) {
+  .invite__intro {
+    white-space: pre-line;
+  }
+
+  .invite__slogan {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 800;
+    color: @font-color3;
+  }
+
+}
