@@ -17,7 +17,7 @@ navToggle.addEventListener('click', function() {
 function initMap() {
 var coordinates = {lat: 34.870792, lng: -111.765570},
     markerImage = '../img/icon-map-marker.svg',
-    zoom = 7,5 ,
+    zoom = 7 ,
     map = new google.maps.Map(document.getElementById('map'), {
         center: coordinates,
         zoom: zoom,
