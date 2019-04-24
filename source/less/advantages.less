@@ -35,6 +35,7 @@
 }
 
 .advantages__wrapper-text--big {
+  box-sizing: border-box;
   padding: 40px 17px 41px;
   background-color: @background-color2;
 }
@@ -150,6 +151,8 @@
   .advantages__header {
     width: 500px;
     margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 37px;
   }
 
   .advantages__item--big {
@@ -170,11 +173,20 @@
   }
 
   .advantages__wrapper-text--big {
-    width: 33%;
+    width: 33.5%;
+    padding-top: 44px;
+  }
+
+  .advantages__number--big {
+    margin-bottom: 22px;
+  }
+
+  .advantages__number--small {
+    margin-bottom: 21px;
   }
 
   .advantages__wrapper-text--small {
-    padding: 0 13px 0;
+    padding: 10px 13px 10px;
     border-top: none;
   }
 
@@ -184,17 +196,19 @@
 
   .advantages__title--big {
     width: 151px;
-    // margin: 0 auto;
+    margin: 0 auto;
+    margin-bottom: 11px;
     .font5(@font-color2);
   }
 
   .advantages__title--small {
     .font5(@font-color3);
     white-space: pre-line;
+    margin-bottom: 11px;
   }
 
   .advantages__description--big {
-    width: 70%;
+    width: 77%;
     margin: 0 auto;
   }
 
@@ -211,7 +225,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 52px;
   }
 
   .advantages__subitem {
@@ -219,9 +235,14 @@
     flex-shrink: 0;
     margin: 0 auto;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 149px;
+    padding-bottom: 10px;
     width: 24%;
     text-align: center;
+  }
+
+  .advantages__subintro {
+    margin-top: 22px;
   }
 
   .advantages__subitem--hotel {
@@ -229,13 +250,13 @@
     padding-left: 11px;
     padding-right: 11px;
     background-size: 75px 72px;
-    background-position: center 3px;
+    background-position: center 60px;
   }
 
   .advantages__subitem--souvenir {
     order: 3;
     background-size: 64px 75px;
-    background-position: center 0;
+    background-position: center 57px;
   }
 
   .advantages__subitem--food {
@@ -243,7 +264,7 @@
     padding-left: 13px;
     padding-right: 13px;
     background-size: 77px 68px;
-    background-position: center 7px;
+    background-position: center 63px;
   }
 
   .advantages__subtitle {
@@ -255,6 +276,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .advantages__list {
+    margin-bottom: 28px;
   }
 }
 
