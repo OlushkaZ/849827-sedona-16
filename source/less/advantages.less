@@ -214,6 +214,8 @@
 
   .advantages__picture {
     width: 67%;
+    display: flex;
+    align-items: center;
   }
 
   .advantages__image {
@@ -287,11 +289,26 @@
 
 @media (min-width: @desktop-width) {
   .advantages__wrapper-text--big {
-    width: 400px;
+    // width: 400px;
+    padding-top: 51px;
+  }
+
+  .advantages__image {
+    height: 256px;
+    object-fit: cover;
   }
 
   .advantages__wrapper-text--small {
     padding: 0 0;
+  }
+
+  .advantages__sublist {
+    margin-bottom: 73px;
+  }
+
+  .advantages__wrapper-small-items {
+    padding-top: 44px;
+    padding-bottom: 66px;
   }
 
   .advantages__subintro {
