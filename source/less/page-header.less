@@ -25,9 +25,19 @@
   }
 }
 
+.page-header__wrap-image--small {
+  padding-top: 52px;
+  height: 158px;
+}
+
 .page-header__image {
   width: 281px;
   height: 214px;
+}
+
+.page-header__image--small {
+  width: 229px;
+  height: 39px;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,6 +50,11 @@
   .page-header__image {
     width: 460px;
     height: 350px;
+  }
+
+  .page-header__image--small {
+    width: 460px;
+    height: 80px;
   }
 
   .page-header__wrap-image {
@@ -56,11 +71,22 @@
       background-size: 1200px auto;
     }
   }
+
+  .page-header__wrap-image--small {
+    padding-top: 94px;
+    height: 289px;
+    background-position: bottom, center bottom;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .page-header__wrap-image--small {
+    padding-top: 102px;
+    height: 301px;
   }
 }
