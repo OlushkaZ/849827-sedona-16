@@ -3,15 +3,19 @@
 }
 
 .gallery__header {
-  padding: 20px;
+  padding: 18px 20px 7px;
   text-align: center;
+  white-space: pre-line;
 }
 
 .gallery__slogan {
+  display: block;
+  margin-bottom: 5px;
   .font2(@font-color3);
 }
 
 .gallery__intro {
+  margin: 0;
   .font6(400, @font-color1);
 }
 
@@ -22,10 +26,18 @@
 }
 
 .gallery__item {
-  padding: 23px 20px 20px;
+  padding: 22px 20px 17px 20px;
+  border-top: 1px solid gray;
+}
+
+.gallery__image {
+  width: 280px;
+  height: 280px;
 }
 
 .gallery__title {
+  margin: 0;
+  margin-top: 11px;
   .font6(800, @font-color3);
 }
 
@@ -33,14 +45,17 @@
 .gallery__autor-name {
   display: inline;
   .font6(400, @font-color1);
+  text-transform: none;
   font-style: normal;
 }
 
 .gallery-likes {
-  padding-left: 30px;
+  padding-left: 37px;
+  padding-top: 8px;
   .font6(800, @font-color3);
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
+  background-position-y: 7px;
 }
 
 @media (min-width: @tablet-width) {
