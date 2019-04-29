@@ -114,6 +114,30 @@
         </li>
       </ul>
     </section>
+    <section class="video">
+      <h2 class="visually-hidden">Видео Седоны</h2>
+      <b class="video__slogan">Все еще сомневаетесь?</b>
+      <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <picture class="video__picture">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+        <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+        <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео Седоны">
+      </picture>
+      <div class="video__control-panel">
+        <div class="video__scroll">
+          <svg class="video__scroll-line" width="280" height="7">
+            <line x1="23" y1="0" x2="257" y2="0" stroke="rgba(255,255,255,0.3)" stroke-width="6" />
+          </svg>
+          <div class="video__scroll-point"></div>
+        </div>
+        <button type="button" class="video__button video__button--replay"><span class="visually-hidden">воспроизвести</span></button>
+        <button type="button" class="video__button video__button--subtitles"><span class="visually-hidden">cубтитры</span></button>
+        <button type="button" class="video__button video__button--fullscreen"><span class="visually-hidden">полный экран</span></button>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <b class="page-footer__title">#visitSEDONA</b>

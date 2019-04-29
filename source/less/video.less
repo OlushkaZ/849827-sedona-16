@@ -1,0 +1,99 @@
+.video {
+  text-align: center;
+  margin: 0;
+  padding-top: 34px;
+  padding-bottom: 104px;
+  position: relative;
+}
+
+.video__slogan {
+  display: block;
+  margin: 0 15px 27px;
+  .font2(@font-color3);
+}
+
+.video__intro {
+  margin: 0 23px 35px;
+  padding: 0;
+  .font6(400, @font-color1);
+}
+
+.video__image {
+  display: block;
+}
+
+.video__control-panel {
+  margin: 0 auto;
+  width: 280px;
+  height: 111px;
+  position: absolute;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1)  66px, transparent 66px);
+}
+
+.video__scroll {
+  position: relative;
+  height: 45px;
+  box-sizing: border-box;
+  padding-top: 13px;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.video__scroll-point {
+  position: absolute;
+  top: 19px;
+  left: 60px;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.video__button {
+  position: absolute;
+  bottom: 24px;
+  width: 32px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 0.6;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.video__button--replay {
+  left: 17px;
+  bottom: 24px;
+  background-image: url("../img/icon-video-replay.svg");
+}
+
+.video__button--subtitles {
+  right: 74px;
+  background-image: url("../img/icon-video-subtitles.svg");
+}
+
+.video__button--fullscreen {
+  right: 17px;
+  bottom: 24px;
+  background-image: url("../img/icon-video-fullscreen.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    margin-bottom: 10px;
+  }
+}
