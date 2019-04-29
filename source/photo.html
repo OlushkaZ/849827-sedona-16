@@ -128,18 +128,30 @@
       </picture>
       <div class="video__control-panel">
         <div class="video__scroll">
-          <svg class="video__scroll-line" width="280" height="7">
-            <line x1="23" y1="0" x2="257" y2="0" stroke="rgba(255,255,255,0.3)" stroke-width="6" />
+          <svg class="video__scroll-line" width="235" height="7">
+            <line x1="0" y1="0" x2="1200" y2="0" stroke="rgba(255,255,255,0.3)" stroke-width="6" />
           </svg>
           <div class="video__scroll-point"></div>
         </div>
-        <button type="button" class="video__button video__button--replay"><span class="visually-hidden">воспроизвести</span></button>
-        <button type="button" class="video__button video__button--subtitles"><span class="visually-hidden">cубтитры</span></button>
-        <button type="button" class="video__button video__button--fullscreen"><span class="visually-hidden">полный экран</span></button>
+        <button type="button" class="video__button video__button--replay">
+          <svg class="video__button-image--replay" width="16" height="20">
+            <use xlink:href="#icon-video-replay"></use>
+          </svg>
+          <span class="visually-hidden">воспроизвести</span></button>
+        <button type="button" class="video__button video__button--subtitles">
+          <svg class="video__button-image--subtitles" width="32" height="20">
+            <use xlink:href="#icon-video-subtitles"></use>
+          </svg>
+          <span class="visually-hidden">cубтитры</span></button>
+        <button type="button" class="video__button video__button--fullscreen">
+          <svg class="video__button-image--fullscreen" width="20" height="20">
+            <use xlink:href="#icon-video-fullscreen"></use>
+          </svg>
+          <span class="visually-hidden">полный экран</span></button>
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--photo">
     <b class="page-footer__title">#visitSEDONA</b>
     <div class="page-footer__social social">
 
