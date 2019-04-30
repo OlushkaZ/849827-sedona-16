@@ -26,7 +26,7 @@
 }
 
 .gallery__item {
-  padding: 22px 20px 17px 20px;
+  padding: 22px 20px 15px 20px;
   border-top: 1px solid gray;
 }
 
@@ -49,7 +49,7 @@
   font-style: normal;
 }
 
-.gallery-likes {
+.gallery__likes {
   padding-left: 37px;
   padding-top: 8px;
   .font6(800, @font-color3);
@@ -59,13 +59,83 @@
 }
 
 @media (min-width: @tablet-width) {
-  .gallery__item--first {
-    width: 648px;
+  .gallery {
+    padding: 55px 60px 31px 60px;
+  }
+
+  .gallery__header {
+    padding: 0;
+    margin-bottom: 48px;
+  }
+
+  .gallery__item {
+    width: 50%;
+    padding: 0;
+    border-top: none;
+  }
+
+  .gallery__item:first-child {
+    width: 100%;
+  }
+
+  .gallery__image {
+    display: block;
+    width: 100%;
+    height: 267px;
+    object-fit: cover;
+  }
+
+  .gallery__image--first {
+    height: 400px;
+  }
+
+  .gallery__wrapper-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    background-color: #eaeaea;
+  }
+
+  .gallery__title {
+    margin: 16px 20px 0 20px;
+  }
+
+  .gallery__autor {
+    margin-left: 20px;
+  }
+
+
+  .gallery__likes {
+    min-width: 25px;
+    margin-right: 28px;
+    margin-top: 21px;
+    padding-left: 32px;
+  }
+
+  .gallery__item:first-child .gallery__likes {
+    margin-right: 21px;
+  }
+
+  .gallery__slogan {
+    margin-bottom: 9px;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 800;
+    color: @font-color1;
+  }
+
+  .gallery__intro {
+    margin: 0 106px;
+    white-space: normal;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .gallery__item--first {
-    width: @desktop-width;
+  .gallery__item {
+    width: 33.3%;
+  }
+
+  .gallery {
+    padding: 55px 0 31px 0;
   }
 }

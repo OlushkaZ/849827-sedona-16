@@ -49,26 +49,30 @@
       <header class="gallery__header">
         <b class="gallery__slogan">Фото и видео</b>
         <p class="gallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут
-           вам забыть о политикие и экономике.</p>
+          вам забыть о политикие и экономике.</p>
       </header>
       <ul class="gallery__list">
-        <li class="gallery__item gallery__item--first ">
-          <picture class="advantages__picture">
+        <li class="gallery__item">
+          <picture class="gallery__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография рассвета">
+            <img class="gallery__image gallery__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография рассвета">
           </picture>
           <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография дороги к Седоне"> -->
-          <h3 class="gallery__title">Неродные просторы</h3>
-          <span class="gallery__autor">Автор фото:</span>
-            <address class="gallery__autor-name">Борис</address>
-          <div class="gallery-likes"><span class="visually-hidden">like</span>1350</div>
+          <div class="gallery__wrapper-text">
+            <div class="gallery__wrapper-left-side">
+              <h3 class="gallery__title">Неродные просторы</h3>
+              <span class="gallery__autor">Автор фото:</span>
+              <address class="gallery__autor-name">Борис</address>
+            </div>
+            <div class="gallery__likes"><span class="visually-hidden">like</span>1350</div>
+          </div>
         </li>
         <li class="gallery__item ">
-          <picture class="advantages__picture">
+          <picture class="gallery__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
@@ -77,13 +81,17 @@
             <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография кактуса">
           </picture>
           <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография цветущего растения"> -->
-          <h3 class="gallery__title">Местная растительность</h3>
-          <span class="gallery__autor">Автор фото:</span>
-            <address class="gallery__autor-name">Сергей</address>
-          <div class="gallery-likes"><span class="visually-hidden">like</span>143</div>
+          <div class="gallery__wrapper-text">
+            <div class="gallery__wrapper-left-side">
+              <h3 class="gallery__title">Местная растительность</h3>
+              <span class="gallery__autor">Автор фото:</span>
+              <address class="gallery__autor-name">Сергей</address>
+            </div>
+            <div class="gallery__likes"><span class="visually-hidden">like</span>143</div>
+          </div>
         </li>
         <li class="gallery__item ">
-          <picture class="advantages__picture">
+          <picture class="gallery__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
@@ -92,13 +100,17 @@
             <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фотография дороги к Седоне">
           </picture>
           <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография дороги к Седоне"> -->
-          <h3 class="gallery__title">Дорога на север</h3>
-          <span class="gallery__autor">Автор фото:</span>
-            <address class="gallery__autor-name">Петр</address>
-          <div class="gallery-likes"><span class="visually-hidden">like</span>96</div>
+          <div class="gallery__wrapper-text">
+            <div class="gallery__wrapper-left-side">
+              <h3 class="gallery__title">Дорога на север</h3>
+              <span class="gallery__autor">Автор фото:</span>
+              <address class="gallery__autor-name">Петр</address>
+            </div>
+            <div class="gallery__likes"><span class="visually-hidden">like</span>96</div>
+          </div>
         </li>
         <li class="gallery__item ">
-          <picture class="advantages__picture">
+          <picture class="gallery__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
@@ -107,10 +119,14 @@
             <img class="gallery__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография моста дьявола">
           </picture>
           <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография моста дьявола"> -->
-          <h3 class="gallery__title">Мост дьявола</h3>
-          <span class="gallery__autor">Автор фото:</span>
-            <address class="gallery__autor-name">Антон</address>
-          <div class="gallery-likes"><span class="visually-hidden">like</span>254</div>
+          <div class="gallery__wrapper-text">
+            <div class="gallery__wrapper-left-side">
+              <h3 class="gallery__title">Мост дьявола</h3>
+              <span class="gallery__autor">Автор фото:</span>
+              <address class="gallery__autor-name">Антон</address>
+            </div>
+            <div class="gallery__likes"><span class="visually-hidden">like</span>254</div>
+          </div>
         </li>
       </ul>
     </section>
@@ -193,21 +209,21 @@
     </div>
   </footer>
   <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
-  navMain.classList.remove('main-nav--nojs');
+    navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
