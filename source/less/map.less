@@ -1,0 +1,36 @@
+.map__iframe {
+  width: 100%;
+  min-height: 350px;
+  padding: 0;
+  margin: 0 auto;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map__iframe {
+    width: @tablet-width;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__iframe {
+    width: @desktop-width;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+}
