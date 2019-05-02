@@ -1,0 +1,38 @@
+.impression {
+  padding: 24px 24px 32px 24px;
+}
+
+.impression__list {
+  .clear-list;
+}
+
+.impression__title {
+  margin: 0 auto;
+  .font2(@font-color3);
+}
+
+.impression__text {
+  position: relative;
+}
+
+.impression__input-radio + .impression__text::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: -2px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.impression__input-radio:checked + .impression__text::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -26px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+}
