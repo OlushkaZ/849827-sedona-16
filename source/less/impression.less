@@ -1,5 +1,5 @@
 .impression {
-  padding: 18px 24px 32px 24px;
+  padding: 18px 24px 0 24px;
 }
 
 .impression__list {
@@ -7,9 +7,10 @@
 }
 
 .impression__title {
-  margin: 0 auto;
+  display: block;
   margin-bottom: 37px;
   .font2(@font-color3);
+  text-align: center;
 }
 
 .impression__text {
@@ -21,7 +22,7 @@
   text-transform: none;
 }
 
-.impression__input-radio + .impression__text::before {
+.impression__text::before {
   content: "";
   position: absolute;
   left: -3px;
@@ -30,6 +31,15 @@
   height: 55px;
   background-color: #f2f2f2;
   border-radius: 50%;
+}
+
+.impression__text:focus::before,
+.impression__text:hover::before {
+  background-color: #e5e5e5;
+}
+
+.impression__text:active::before {
+  background-color: #d5d5d5;
 }
 
 .impression__input-radio:checked + .impression__text::after {
@@ -41,4 +51,8 @@
   height: 20px;
   background-color: #333333;
   border-radius: 50%;
+}
+
+.impression__input-radio:checked + .impression__text:active::after {
+  opacity: 0.3;
 }

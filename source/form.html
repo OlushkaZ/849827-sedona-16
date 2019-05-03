@@ -50,8 +50,18 @@
         <b class="review__slogan">Оставьте свой отзыв</b>
         <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
-      <form class="review__form">
+      <form class="review__form" action="#.html" method="post">
         <div class="review__item username">
+          <legend class="username__title">Представьтесь:</legend>
+          <label class="username__text"> Имя:
+            <input class="username__input username__input--name1" type="text" value="" placeholder="Петр">
+          </label>
+          <label class="username__text"> Фамилия:
+            <input class="username__input username__input--family" type="text" value="" placeholder="Иванов">
+          </label>
+          <label class="username__text"> Отчество:
+            <input class="username__input username__input--name2" type="text" value="" placeholder="Александрович">
+          </label>
         </div>
         <div class="review__item contacts">
         </div>
@@ -72,6 +82,34 @@
             </li>
           </ul>
         </div>
+        <div class="review__item attractions">
+          <legend class="attractions__title">Посещенные достопримечательности:</legend>
+          <ul class="attractions__list">
+            <li class="attractions__item">
+              <input class="visually-hidden attractions__input-checkbox" type="checkbox" id="checkbox-bridge" checked>
+              <label class="attractions__text" for="checkbox-bridge">Мост Дьявола</label>
+            </li>
+            <li class="attractions__item">
+              <input class="visually-hidden attractions__input-checkbox" type="checkbox" id="checkbox-mountain" checked>
+              <label class="attractions__text" for="checkbox-mountain">Гора-Колокол</label>
+            </li>
+            <li class="attractions__item">
+              <input class="visually-hidden attractions__input-checkbox" type="checkbox" id="checkbox-park" checked>
+              <label class="attractions__text" for="checkbox-park">Слайд-парк</label>
+            </li>
+            <li class="attractions__item">
+              <input class="visually-hidden attractions__input-checkbox" type="checkbox" id="checkbox-rocks">
+              <label class="attractions__text" for="checkbox-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </div>
+        <div class="review__item feedback">
+          <legend class="feedback__title">Опишите свои эмоции:</legend>
+          <label> <span class="visually-hidden">опишите свои эмоции</span>
+            <textarea class="feedback__text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="review__button button">Отправить отзыв</button>
       </form>
     </section>
   </main>
