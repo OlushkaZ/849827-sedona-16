@@ -65,3 +65,20 @@
 .attractions__input-checkbox:checked + .attractions__text:active::after {
   opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+  .attractions {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .attractions__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .attractions__item {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}

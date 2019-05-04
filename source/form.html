@@ -50,20 +50,25 @@
         <b class="review__slogan">Оставьте свой отзыв</b>
         <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
-      <form class="review__form" action="#.html" method="post">
+      <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="review__item username">
           <legend class="username__title">Представьтесь:</legend>
           <label class="username__text"> Имя:
-            <input class="username__input username__input--name1" type="text" value="" placeholder="Петр">
+            <input class="username__input username__input--name1" type="text" value="" placeholder="Петр" autocomplete="on">
           </label>
           <label class="username__text"> Фамилия:
-            <input class="username__input username__input--family" type="text" value="" placeholder="Иванов">
+            <input class="username__input username__input--family" type="text" value="" placeholder="Иванов" autocomplete="on">
           </label>
           <label class="username__text"> Отчество:
-            <input class="username__input username__input--name2" type="text" value="" placeholder="Александрович">
+            <input class="username__input username__input--name2" type="text" value="" placeholder="Александрович" autocomplete="on">
           </label>
         </div>
         <div class="review__item contacts">
+          <legend class="contacts__title">Контактная инфомация:</legend>
+          <label class="contacts__text" for="contacts-tel">Контактный телефон*</label>
+          <input class="contacts__input contacts__input--phone" type="tel" id="contacts-tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" autocomplete="on" required>
+          <label class="contacts__text" for="contacts-email">Электронная почта*</label>
+          <input class="contacts__input  contacts__input--email" type="email" id="contacts-email" placeholder="Введите e-mail" autocomplete="on" required>
         </div>
         <div class="review__item impression">
           <legend class="impression__title">Ваше общее впечатление:</legend>
