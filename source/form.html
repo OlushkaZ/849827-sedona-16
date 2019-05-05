@@ -30,7 +30,7 @@
           <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
-      <a class="main-nav__logo">
+      <a class="main-nav__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип городка «Седона»">
@@ -53,11 +53,11 @@
       <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="review__item username">
           <legend class="username__title">Представьтесь:</legend>
-          <label class="username__text"> Имя:
-            <input class="username__input username__input--name1" type="text" value="" placeholder="Петр" autocomplete="on">
+          <label class="username__text"> Имя*:
+            <input class="username__input username__input--name1" type="text" value="" placeholder="Петр" autocomplete="on" required>
           </label>
-          <label class="username__text"> Фамилия:
-            <input class="username__input username__input--family" type="text" value="" placeholder="Иванов" autocomplete="on">
+          <label class="username__text"> Фамилия*:
+            <input class="username__input username__input--family" type="text" value="" placeholder="Иванов" autocomplete="on" required>
           </label>
           <label class="username__text"> Отчество:
             <input class="username__input username__input--name2" type="text" value="" placeholder="Александрович" autocomplete="on">
@@ -66,9 +66,9 @@
         <div class="review__item contacts">
           <legend class="contacts__title">Контактная инфомация:</legend>
           <label class="contacts__text" for="contacts-tel">Контактный телефон*</label>
-          <input class="contacts__input contacts__input--phone" type="tel" id="contacts-tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" autocomplete="on" required>
+          <input class="contacts__input contacts__input--phone" type="tel" id="contacts-tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Введите телефон" autocomplete="on" required>
           <label class="contacts__text" for="contacts-email">Электронная почта*</label>
-          <input class="contacts__input  contacts__input--email" type="email" id="contacts-email" placeholder="Введите e-mail" autocomplete="on" required>
+          <input class="contacts__input  contacts__input--email" type="email" id="contacts-email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Введите e-mail" autocomplete="on" required>
         </div>
         <div class="review__item impression">
           <legend class="impression__title">Ваше общее впечатление:</legend>
