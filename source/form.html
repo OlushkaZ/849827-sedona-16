@@ -52,14 +52,15 @@
         <b class="review__slogan">Оставьте свой отзыв</b>
         <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
-      <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
+      <!-- <form class="review__form" action="https://echo.htmlacademy.ru" method="post"> -->
+      <form class="review__form" action="" method="get">
         <div class="review__item username">
           <legend class="username__title">Представьтесь:</legend>
           <label class="username__text"> Имя*:
-            <input class="username__input username__input--name1" type="text" value="" placeholder="Петр" autocomplete="on" required>
+            <input class="username__input username__input--name1" type="text" id=contacts-name value="" placeholder="Петр" autocomplete="on" required>
           </label>
           <label class="username__text"> Фамилия*:
-            <input class="username__input username__input--family" type="text" value="" placeholder="Иванов" autocomplete="on" required>
+            <input class="username__input username__input--family" type="text" id=contacts-family value="" placeholder="Иванов" autocomplete="on" required>
           </label>
           <label class="username__text"> Отчество:
             <input class="username__input username__input--name2" type="text" value="" placeholder="Александрович" autocomplete="on">
@@ -161,6 +162,24 @@
       </a>
     </div>
   </footer>
+  <section class="modal popap-success">
+    <div class="popap-success__wrapper">
+      <h2 class="popap-success__caption">Ваш отзыв отправлен!</h2>
+      <p class="popap-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.
+      </p>
+    </div>
+    <button class="button popap-success__button modal__close" type="button">
+      Закрыть окно
+    </button>
+  </section>
+  <section class="modal popap-failure">
+      <h2 class="popap-failure__caption">Что-то пошло не так!</h2>
+      <p class="popap-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+    <button class=" button popap-failure__button modal__close" type="button">
+      ок
+    </button>
+  </section>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqSTRaVrsKwMnRKYabauIF54YP-E-HG3A"></script>
   <script src="js/external.min.js"></script>
   <script src="picturefill.js"></script>
