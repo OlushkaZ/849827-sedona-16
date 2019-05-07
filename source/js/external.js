@@ -40,6 +40,7 @@ closeFailure.addEventListener('click', function() {
   popapFailure.classList.remove("modal--show");
 });
 
+
 //карта google
 function initMap() {
 var coordinates = {lat: 34.870792, lng: -111.765570},
