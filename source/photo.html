@@ -7,6 +7,8 @@
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <script src="js/picturefill.min.js"></script>
 </head>
 
@@ -27,10 +29,10 @@
           <a class="site-list__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">HTML Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
-      <a class="main-nav__logo">
+      <a class="main-nav__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип городка «Седона»">
@@ -53,15 +55,16 @@
       </header>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <picture class="gallery__picture">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-            <img class="gallery__image gallery__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография рассвета">
-          </picture>
-          <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография дороги к Седоне"> -->
+          <a href="pict1.html">
+            <picture class="gallery__picture">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="gallery__image gallery__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография рассвета">
+            </picture>
+          </a>
           <div class="gallery__wrapper-text">
             <div class="gallery__wrapper-left-side">
               <h3 class="gallery__title">Неродные просторы</h3>
@@ -77,15 +80,16 @@
           </div>
         </li>
         <li class="gallery__item ">
-          <picture class="gallery__picture">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография кактуса">
-          </picture>
-          <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография цветущего растения"> -->
+          <a href="pict2.html">
+            <picture class="gallery__picture">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография кактуса">
+            </picture>
+          </a>
           <div class="gallery__wrapper-text">
             <div class="gallery__wrapper-left-side">
               <h3 class="gallery__title">Местная растительность</h3>
@@ -100,15 +104,16 @@
           </div>
         </li>
         <li class="gallery__item ">
-          <picture class="gallery__picture">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фотография дороги к Седоне">
-          </picture>
-          <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография дороги к Седоне"> -->
+          <a href="pict3.html">
+            <picture class="gallery__picture">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фотография дороги к Седоне">
+            </picture>
+          </a>
           <div class="gallery__wrapper-text">
             <div class="gallery__wrapper-left-side">
               <h3 class="gallery__title">Дорога на север</h3>
@@ -123,15 +128,16 @@
           </div>
         </li>
         <li class="gallery__item ">
-          <picture class="gallery__picture">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография моста дьявола">
-          </picture>
-          <!-- <img class="gallery__image" src="http://placehold.it/280x280" width="280" height="280" alt="Фотография моста дьявола"> -->
+          <a href="pict4.html">
+            <picture class="gallery__picture">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография моста дьявола">
+            </picture>
+          </a>
           <div class="gallery__wrapper-text">
             <div class="gallery__wrapper-left-side">
               <h3 class="gallery__title">Мост дьявола</h3>
@@ -225,22 +231,9 @@
       </a>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqSTRaVrsKwMnRKYabauIF54YP-E-HG3A"></script>
+  <script src="js/external.min.js"></script>
+  <script src="picturefill.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,14 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
+var reviewForm = document.querySelector(".review__form");
+var popapSuccess = document.querySelector(".popap-success");
+var popapFailure = document.querySelector(".popap-failure");
+var closeSuccess = popapSuccess.querySelector(".modal__close");
+var closeFailure = popapFailure.querySelector(".modal__close");
+var userName = reviewForm.querySelector("[id=contacts-name]");
+var userFamily = reviewForm.querySelector("[id=contacts-family]");
+var userEmail = reviewForm.querySelector("[id=contacts-email]");
+var userTel = reviewForm.querySelector("[id=contacts-tel]");
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -11,6 +20,24 @@ navToggle.addEventListener('click', function() {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
   }
+});
+
+reviewForm.addEventListener("submit", function(evt) {
+  if (!userName.value || !userFamily.value || !userEmail.value || !userTel.value) {
+    evt.preventDefault();
+  popapFailure.classList.add("modal--show");
+  }
+  else {
+    popapSuccess.classList.add("modal--show");
+  }
+});
+
+closeSuccess.addEventListener('click', function() {
+  popapSuccess.classList.remove("modal--show");
+});
+
+closeFailure.addEventListener('click', function() {
+  popapFailure.classList.remove("modal--show");
 });
 
 //карта google
