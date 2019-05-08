@@ -19,9 +19,33 @@
   border: none;
 }
 
+.feedback__text::-webkit-input-placeholder {
+  color: black;
+}
+
+.feedback__text:-moz-placeholder {
+  color: black;
+}
+
 @media (min-width: @tablet-width) {
   .feedback {
     box-sizing: border-box;
+    width: 100%;
+    margin: 20px 8% 5px;
+    padding: 45px 0;
+    border-top: 1.5px solid #f2f2f2;
+  }
+
+  .feedback__title {
+    position: relative;
+    bottom: 60px;
+    background-color: white;
+    width: 397px;
+    margin: 0 auto;
+    .font5(@font-color3);
+  }
+
+  .feedback__text {
     width: 100%;
   }
 }

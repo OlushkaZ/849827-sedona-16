@@ -30,9 +30,42 @@
   margin-bottom: 36px;
 }
 
+.review__explanation {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .review__form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 61px;
+  }
+
+  .review__slogan {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 800;
+    color: @font-color3;
+  }
+
+  .review__header {
+    padding: 76px 161px 65px;
+  }
+
+  .review__item {
+    border-top: none;
+  }
+
+  .review__button {
+    display: block;
+    margin: 0 8%;
+    padding-left: 34px;
+    min-width: 42%;
+  }
+
+  .review__explanation {
+    display: inline-block;
+    margin: 0 8%;
+    padding: 21px 0 0 33px;
   }
 }
