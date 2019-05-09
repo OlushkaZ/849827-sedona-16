@@ -68,10 +68,16 @@
         </div>
         <div class="review__item contacts">
           <legend class="contacts__title">Контактная инфомация:</legend>
-          <label class="contacts__text" for="contacts-tel">Контактный телефон*</label>
-          <input class="contacts__input contacts__input--phone" type="tel" id="contacts-tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Введите телефон" autocomplete="on" required>
-          <label class="contacts__text" for="contacts-email">Электронная почта*</label>
-          <input class="contacts__input  contacts__input--email" type="email" id="contacts-email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Введите e-mail" autocomplete="on" required>
+          <div class="contacts__wrapper-all">
+            <div class="contacts__wrapper">
+              <label class="contacts__text" for="contacts-tel"><span class="contacts__text--hidden">Контактный</span> телефон*:</label>
+              <input class="contacts__input contacts__input--phone" type="tel" id="contacts-tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Введите телефон" autocomplete="on" required>
+            </div>
+            <div class="contacts__wrapper">
+              <label class="contacts__text" for="contacts-email">Электронная почта*:</label>
+              <input class="contacts__input  contacts__input--email" type="email" id="contacts-email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Введите e-mail" autocomplete="on" required>
+            </div>
+          </div>
         </div>
         <div class="review__item impression">
           <legend class="impression__title">Ваше общее впечатление:</legend>
@@ -117,8 +123,8 @@
             <textarea class="feedback__text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </div>
-          <button type="submit" class="review__button button">Отправить отзыв</button>
-          <span class="review__explanation">* — обязательные поля</span>
+        <button type="submit" class="review__button button">Отправить отзыв</button>
+        <span class="review__explanation">* — обязательные поля</span>
       </form>
     </section>
   </main>
@@ -177,7 +183,7 @@
     <h2 class="popap-failure__caption">Что-то пошло не так!</h2>
     <p class="popap-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
-    <button class=" button popap-failure__button modal__close" type="button">
+    <button class="button popap-failure__button modal__close" type="button">
       ок
     </button>
   </section>
