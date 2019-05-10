@@ -16,6 +16,7 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
+  <div class="wrapper-all">
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list site-list">
@@ -52,10 +53,9 @@
         <b class="review__slogan">Оставьте свой отзыв</b>
         <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
-      <!-- <form class="review__form" action="https://echo.htmlacademy.ru" method="post"> -->
-      <form class="review__form" action="" method="post">
+      <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="review__item username">
-          <legend class="username__title">Представьтесь:</legend>
+          <span class="username__title">Представьтесь:</span>
           <label class="username__text"> Имя*:
             <input class="username__input username__input--name1" type="text" id=contacts-name value="" placeholder="Петр" autocomplete="on" required>
           </label>
@@ -67,7 +67,7 @@
           </label>
         </div>
         <div class="review__item contacts">
-          <legend class="contacts__title">Контактная инфомация:</legend>
+          <span class="contacts__title">Контактная инфомация:</span>
           <div class="contacts__wrapper-all">
             <div class="contacts__wrapper">
               <label class="contacts__text" for="contacts-tel"><span class="contacts__text--hidden">Контактный</span> телефон*:</label>
@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="review__item impression">
-          <legend class="impression__title">Ваше общее впечатление:</legend>
+          <span class="impression__title">Ваше общее впечатление:</span>
           <ul class="impression__list">
             <li class="impression__item">
               <input class="visually-hidden impression__input-radio" type="radio" name="impression__radio" value="good" id="radio-good" checked>
@@ -97,7 +97,7 @@
           </ul>
         </div>
         <div class="review__item attractions">
-          <legend class="attractions__title">Посещенные достопримечательности:</legend>
+          <span class="attractions__title">Посещенные достопримечательности:</span>
           <ul class="attractions__list">
             <li class="attractions__item">
               <input class="visually-hidden attractions__input-checkbox" type="checkbox" id="checkbox-bridge" checked>
@@ -118,7 +118,7 @@
           </ul>
         </div>
         <div class="review__item feedback">
-          <legend class="feedback__title">Опишите свои эмоции:</legend>
+          <span class="feedback__title">Опишите свои эмоции:</span>
           <label> <span class="visually-hidden">опишите свои эмоции</span>
             <textarea class="feedback__text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
@@ -169,6 +169,7 @@
       </a>
     </div>
   </footer>
+  </div>
   <section class="modal popap-success">
     <div class="popap-success__wrapper">
       <h2 class="popap-success__caption">Ваш отзыв отправлен!</h2>
