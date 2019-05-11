@@ -3,12 +3,18 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var reviewForm = document.querySelector(".review__form");
 var popapSuccess = document.querySelector(".popap-success");
 var popapFailure = document.querySelector(".popap-failure");
-var closeSuccess = popapSuccess.querySelector(".modal__close");
-var closeFailure = popapFailure.querySelector(".modal__close");
-var userName = reviewForm.querySelector("[id=contacts-name]");
-var userFamily = reviewForm.querySelector("[id=contacts-family]");
-var userEmail = reviewForm.querySelector("[id=contacts-email]");
-var userTel = reviewForm.querySelector("[id=contacts-tel]");
+if(popapSuccess){
+  var closeSuccess = popapSuccess.querySelector(".modal__close");
+}
+if(popapFailure){
+  var closeFailure = popapFailure.querySelector(".modal__close");
+}
+if(reviewForm){
+  var userName = reviewForm.querySelector("[id=contacts-name]");
+  var userFamily = reviewForm.querySelector("[id=contacts-family]");
+  var userEmail = reviewForm.querySelector("[id=contacts-email]");
+  var userTel = reviewForm.querySelector("[id=contacts-tel]");
+}
 
 navMain.classList.remove('main-nav--nojs');
 

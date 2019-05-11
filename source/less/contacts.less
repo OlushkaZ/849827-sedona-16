@@ -57,5 +57,61 @@
   .contacts {
     box-sizing: border-box;
     width: 100%;
+    margin: 80px 8% 20px;
+    padding: 11px 0;
+    border-top: 1.5px solid #f2f2f2;
+  }
+
+  .contacts__title {
+    position: relative;
+    bottom: 26px;
+    background-color: white;
+    width: 397px;
+    margin: 0 auto;
+    .font5(@font-color3);
+  }
+
+  .contacts__input {
+    width: 100%;
+    margin: 6px auto 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    margin: 78px 121px 20px;
+    padding-top: 61px;
+    padding-bottom: 35px;
+  }
+
+  .contacts__title {
+    bottom: 75px;
+  }
+
+  .contacts__wrapper-all {
+    display: flex;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .contacts__text {
+    display: block;
+    padding-left: 0;
+    padding-top: 4px;
+  }
+
+  .contacts__text--hidden {
+    display: none;
+  }
+
+  .contacts__input {
+    width: 316px;
+    margin: 0;
+    margin-left: 16px;
+    padding-top: 0;
   }
 }
