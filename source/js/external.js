@@ -56,7 +56,7 @@ closeFailure.addEventListener('click', function() {
 //карта google
 function initMap() {
 var coordinates = {lat: 34.870792, lng: -111.765570},
-    markerImage = '../img/icon-map-marker.svg',
+    markerImage = 'img/icon-map-marker.svg',
     zoom = 7 ,
     map = new google.maps.Map(document.getElementById('map'), {
         center: coordinates,
