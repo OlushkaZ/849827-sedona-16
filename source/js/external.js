@@ -28,6 +28,7 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+if(reviewForm){
 reviewForm.addEventListener("submit", function(evt) {
   if (!userName.value || !userFamily.value || !userEmail.value || !userTel.value) {
     evt.preventDefault();
@@ -37,14 +38,19 @@ reviewForm.addEventListener("submit", function(evt) {
     popapSuccess.classList.add("modal--show");
   }
 });
+}
 
+if(closeSuccess){
 closeSuccess.addEventListener('click', function() {
   popapSuccess.classList.remove("modal--show");
 });
+}
 
+if(closeFailure){
 closeFailure.addEventListener('click', function() {
   popapFailure.classList.remove("modal--show");
 });
+}
 
 
 //карта google
